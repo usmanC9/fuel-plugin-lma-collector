@@ -164,7 +164,7 @@ Usage example:
 ```puppet
 class { 'lma_collector::collectd::base':
   processes       => ['influxdb', 'grafana-server', 'hekad', 'collectd'],
-  process_matches => [{name => 'elasticsearch', regex => 'java'}]
+  process_matches => [{name => 'elasticsearch', regex => 'java'}],
   read_threads    => 10,
 }
 ```
